@@ -17,7 +17,6 @@ di root folder:
 
         git config --global init.defaultBranch main
         git branch -m master main
-
     isi data git 
         git config user.email "emailghantum@gmail.com"
         git config user.name "usernameghantum"
@@ -33,5 +32,10 @@ di root folder:
             origin  https://github.com/aqajade/htmlcss.git (fetch)
             origin  https://github.com/aqajade/htmlcss.git (push)
             brrti udh aman
+
+mulai update repo:
+    git add .
+    git commit -m "updatemsgnybebas"
+    git push -u origin main
     
     
