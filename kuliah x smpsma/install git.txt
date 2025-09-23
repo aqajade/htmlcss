@@ -27,5 +27,11 @@ di root folder:
         git init
     mensinkronkan root local ke public repo
         git remote add origin https://github.com/aqajade/htmlcss.git
+    cek sinkronisasi
+        git remote -v
+        klo response ny:
+            origin  https://github.com/aqajade/htmlcss.git (fetch)
+            origin  https://github.com/aqajade/htmlcss.git (push)
+            brrti udh aman
     
     
