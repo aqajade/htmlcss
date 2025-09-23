@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .bungkus {
+      display: flex;
+      height: 100vh;
+    }
+    .kiri{
+      width: 190px;
+  
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .kiri .img{
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid white;
+      box-shadow: 0 0 15px rgb(140, 140, 193);
+      margin: 30px;
+    }
+    .kiri .img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+   .kanan {
+  flex: 1;
+  background: url('karpet.png') no-repeat center center/cover;
+
+  display: flex;             
+  flex-direction: column;    
+  justify-content: center;   
+  align-items: center;       
+  text-align: center;        
+  padding: 20px;
+}
+.kanan h1 {
+  color: rgb(23, 22, 22);
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 3px black;
+}
+.kanan p {
+  color: white;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px black;
+}
+
+    .kiri .labib {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+    }
+    .kiri .baksos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    .kiri .baksos a {
+      color: white;
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+    }
+    .kiri .baksos a:hover {
+      color: yellow;
+    }
+    .kiri .pilihan {
+      list-style: none;
+      margin-top: 20px;
+      padding: 0;
+      width: 100%;
+    }
+    .kiri .pilihan li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      padding: 8px 20px;
+    }
+    .kiri .pilihan li a {
+      color: rgb(247, 232, 21);
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    .kiri .pilihan li a:hover {
+      color: rgb(11, 12, 1);
+    } 
+    footer {
+      margin-top: auto;
+      padding: 10px;
+      color: white;
+      text-align: center;
+    }
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+    .kiri, .kanan {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .kiri {
+      background-color: rgb(34, 34, 34);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="bungkus">
+    <div class="kiri">
+      <div class="img">
+        <img src="karpet.png" alt="">
+      </div>
+      <h1 class="labib">labib</h1>
+      <div class="baksos">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-skype"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <ul class="pilihan">
+        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+        <li><a href="#"><i class="fas fa-envelope"></i> Messages</a></li>
+        <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+      </ul>
+      <footer>
+        <p style="text-align: center; color: white;">&copy; 2023 Labib. All rights reserved.</p>
+      </footer>
+    </div>
+    <div class="kanan">
+      <h1>Welcome to My Portfolio</h1>
+      <p>This is a simple portfolio page designed to showcase my skills and projects.</p>
+      <p>Feel free to explore and connect with me through the social media links provided.</p>
+      <p>Thank you for visiting!</p>
+    </div>
+  </div>
+</body>
+</html>

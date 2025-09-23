@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Smith</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Kaushan Script", cursive;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        .flex{
+            display: flex;
+        }
+        .jcc{
+            justify-content: center;
+        }
+        .aic{
+            align-items: center;
+        }
+        .jcsb{
+            justify-content: space-between;
+        }
+        .fdc {
+            flex-direction: column;
+        }
+       .kiri{
+            width: 20%;
+            height: 100vh;
+            background-color: rgb(4, 4, 20);
+            padding: 40px 10px;
+        }
+        .kanan{
+            height: 100vh;
+            width: 80%;
+            background-image: url('images (1).jpg');
+            background-size: cover;       
+            background-position: center;  
+        }
+        .tulisan {
+             color: rgb(255, 255, 255);
+             margin-top: 100px;
+            margin-right: 500px;
+         }
+         .kanan .title {
+            font-size: 40px;
+            font-weight: bold;
+
+         }
+
+        .kiri .folio {
+            gap: 20px;
+            position: relative;
+        }
+        .kiri .folio .nama { 
+            color: white;
+            font-weight: bold;
+            font-size: 28px;
+        }
+        .kiri .folio  img {
+            z-index: 1;
+            border: 10px solid rgb(3, 6, 32);
+            border-radius: 50%;
+        }
+        .kiri .folio .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .kiri .folio .social-icons a {
+            background-color: #1a1d33;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            text-decoration: none;
+         }
+        .kiri .navbar ul {
+            list-style: none;
+            margin-left: 30px;
+            margin-top: 60px;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            font-size: 30px;
+        }
+        .kiri .navbar ul li i {
+            color: rgb(170, 170, 170);
+            font-size: 20px;
+        }
+        .kiri .navbar ul li span {
+            margin-left: 10px;
+            color: rgb(91, 91, 91);
+            font-size: 20px;
+        }
+        .kiri .navbar ul li span.home {
+            color: rgb(255, 255, 255);
+        }
+        .kiri .navbar ul li i.fa-house{
+            color: rgb(0, 89, 255);
+        }
+        .kiri .footer {
+            margin-top: 60px;
+            padding: 20px 0;
+            text-align: center;
+            color: rgb(170, 170, 170);
+        }
+        .footer .copy .portfolio {
+            color: rgb(255, 255, 255);
+        }
+        .footer .design span{
+            color: rgb(0, 60, 170);
+        }
+    </style>
+</head>
+<body>
+   <div class="bungkus-hero flex">
+       <div class="kiri">
+        <div class="folio flex jcc fdc aic">
+            <div class="belakang"></div>
+            <img width="200px" src="Group 1.png" alt="">
+            <div class="nama">Zivano</div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-skype"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>  
+        <div class="navbar">
+            <ul>
+                <li><a href=""><i class="fa-regular fa-house"></i><span class="home">Home</span></a></li>
+                <li><a href=""><i class="fa-regular fa-user"></i><span>About</span></a></li>
+                <li><a href=""><i class="fa-regular fa-file"></i><span>resume</span></a></li>
+                <li><a href=""><i class="fa-solid fa-table-cells"></i><span>Portofolio</span></a></li>
+                <li><a href=""><i class="fa-regular fa-credit-card"></i><span>Services</span></a></li>
+                <li><a href=""><i class=" fa-regular fa-envelope"></i><span>contact</span></a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <div class="copy">© 2023 Copyrights <span class="portfolio">iportfolio</span></div>
+            <div class="design">Designed by <span>BoostrapMade</span></div>
+        </div>
+       </div>
+       <div class="kanan flex jcc aic fdc">
+        <div class="tulisan">
+
+            <div class="title">zivano Smith</div>
+             <div class="desc">Lorem, ipsum dolor.</div>
+        </div>
+       </div>
+   </div>
+</body>
+</html>

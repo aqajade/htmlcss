@@ -1,0 +1,95 @@
+<!-- 
+- display flex 
+- bagaimana membuat elemen tersusun kiri kanan
+- bagaimana membuat elemen rata tengah secara vertikal maupun horizontal
+- membuat jarak yg rata horizontal dengan justify content space between
+- bagaimana cara membuat bungkus untuk styling tertentu
+- dimana naruh flex, dimana naruh aic, dimana naruh jcc, jcsb
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alice&family=Amatic+SC:wght@400;700&family=Bacasime+Antique&family=Baskervville:ital@0;1&family=Bellefair&family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Berkshire+Swash&family=Borel&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Della+Respira&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Estonia&family=Forum&family=Gideon+Roman&family=Great+Vibes&family=Henny+Penny&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Junge&family=Kaushan+Script&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Libre+Caslon+Display&family=Lora:ital,wght@0,400..700;1,400..700&family=Mountains+of+Christmas:wght@400;700&family=Oranienbaum&family=Original+Surfer&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Prata&family=Qwigley&family=Viaoda+Libre&family=Yeseva+One&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Kaushan Script", cursive;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        .flex{
+            display: flex;
+        }
+        .jcc{
+            justify-content: center;
+        }
+        .aic{
+            align-items: center;
+        }
+        .jcsb{
+            justify-content: space-between;
+        }
+        .bungkus1 i{
+            font-size: 30px;
+            color: rgb(240, 243, 63);
+        }
+        .bungkus1 h2{
+            letter-spacing: 1.5px;
+        }
+        .bungkus2{
+            gap: 20px;
+            background-color: rgb(240, 243, 63);
+            padding: 10px 20px;
+            border-radius: 25px;
+        }
+        .bungkus2 a{ 
+            padding: 5px 10px;
+            border-radius: 25px;
+        }
+        .bungkus3 a{
+            background-color: rgb(240, 243, 63);
+            padding: 10px 20px;
+            border-radius: 25px; 
+        }
+        header{
+            background-color: rgb(75, 241, 241);
+            padding: 17px 50px;
+        }
+        header a{
+            transition: 0.4s;
+        }
+        header .bungkus2 a:hover,
+        header .bungkus3 a:hover{
+            background-color: rgb(195, 190, 35);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="flex aic jcsb">
+        <div class="bungkus1">
+            <a class="flex" href="">
+                <i class="fa-brands fa-slack"></i>
+                <h2>Reza</h2>
+            </a>
+        </div>
+        <div class="bungkus2 flex">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </div>
+        <div class="bungkus3 flex">
+            <a href="">Connect with Me</a>
+        </div>
+    </header>
+</body>
+</html>

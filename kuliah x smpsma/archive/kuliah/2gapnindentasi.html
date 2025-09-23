@@ -1,0 +1,64 @@
+<!-- 
+indentasi = beberapa spasi yg menandakan baris tersebut anak dari baris diatasnya
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a{
+            color: #000;
+            text-decoration: none;
+        }
+        .flex{
+            display: flex;
+        }
+        .block{
+            display: block;
+        }
+        .ijo{
+            background-color: greenyellow;
+        }
+        .tomat{
+            background-color: tomato;
+        }
+
+        .aic{
+            align-items: center;
+        }
+        .jcc{
+            justify-content: center;
+        }
+        .jcsb{
+            justify-content: space-between;
+        }
+        header{
+            /* 4arah */
+            /* padding: 25px; */
+            /*atasbawah kirikanan*/
+            /* padding: 5px 10px;  */
+            /* atas kanan bawah kiri , trbl */
+            padding: 50px 50px 30px 0px; 
+        }
+    </style>
+</head>
+<body>
+    <header class="flex tomat aic jcsb">
+        <div class="kiri">
+            <h1>Reza</h1>
+        </div>
+        <div class="kanan">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </div>
+    </header>
+</body>
+</html>

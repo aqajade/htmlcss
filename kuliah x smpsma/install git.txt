@@ -1,0 +1,31 @@
+windows:
+    munculin cmd: windows+r terus ketik cmd , enter 
+    ketik git --version
+    kalau muncul versinya berarti udh keinstall
+
+macbook:
+    munculin terminal: cmd+spasi , ketik terminal , enter
+    git --version , butuh command line tools download aja
+    mac yg versi terbaru bisa install homebrew 
+
+di root folder: 
+    setting default branch ke main 
+        cek list branch repositori
+            git branch
+            klo g ada isinya buat default branch ke main:
+                git checkout -b main
+
+        git config --global init.defaultBranch main
+        git branch -m master main
+
+    isi data git 
+        git config user.email "emailghantum@gmail.com"
+        git config user.name "usernameghantum"
+        git config user.email "gholamreza.aqajade@gmail.com"
+        git config user.name "aqajade"
+    inisialisasi folder local yg blm tersentuh git
+        git init
+    mensinkronkan root local ke public repo
+        git remote add origin https://github.com/aqajade/htmlcss.git
+    
+    

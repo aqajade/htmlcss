@@ -1,0 +1,40 @@
+<!-- 
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alice&family=Amatic+SC:wght@400;700&family=Bacasime+Antique&family=Baskervville:ital@0;1&family=Bellefair&family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Berkshire+Swash&family=Borel&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Della+Respira&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Estonia&family=Forum&family=Gideon+Roman&family=Great+Vibes&family=Henny+Penny&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Junge&family=Kaushan+Script&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Libre+Caslon+Display&family=Lora:ital,wght@0,400..700;1,400..700&family=Mountains+of+Christmas:wght@400;700&family=Oranienbaum&family=Original+Surfer&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Prata&family=Qwigley&family=Viaoda+Libre&family=Yeseva+One&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Kaushan Script", cursive;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        .flex{
+            display: flex;
+        }
+        .jcc{
+            justify-content: center;
+        }
+        .aic{
+            align-items: center;
+        }
+        .jcsb{
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      background-color: #1e1e1e;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+
+    .navbar h1 {
+      color: #00bcd4;
+      font-size: 24px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #00bcd4;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 40px;
+      background-color: #333;
+      min-width: 150px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      color: white;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .hero {
+      background-color: #00bcd4;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .content .box {
+      flex: 1 1 45%;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .content .box:hover {
+      transform: translateY(-5px);
+    }
+
+    .box h3 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #1e1e1e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+      }
+
+      .content .box {
+        flex: 1 1 100%;
+      }
+
+      .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        background-color: #1e1e1e;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        display: none;
+      }
+
+      .navbar:hover ul {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+  <nav class="navbar">
+    <h1>Pelajar IT Pemula</h1>
+    <ul>
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li class="dropdown">
+        <a href="#">Materi ▼</a>
+        <div class="dropdown-content">
+          <a href="#">HTML</a>
+          <a href="#">CSS</a>
+          <a href="#">JavaScript</a>
+        </div>
+      </li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+     </nav>
+
+  <section class="hero" id="beranda">
+    <h2>Selamat Datang di Website Saya</h2>
+    <p>Website ini dibuat untuk latihan pelajar IT tingkat Pemula.</p>
+  </section>
+
+  <section class="content" id="tentang">
+    <div class="box">
+      <h3>Tentang Saya</h3>
+      <p>Saya pelajar smp di Sekolah IT AL IMAM NAFI, Saya sangat suka pelajaran IT karna itu saya sekolah IT.</p>
+    </div>
+    <div class="box">
+      <h3>Tujuan Website</h3>
+      <p>Website ini sebagai latihan membuat layout, navbar, dan fitur interaktif menggunakan HTML dan CSS.</p>
+    </div>
+  </section>
+
+  <section class="content" id="kontak">
+    <div class="box">
+      <h3>Hubungi Saya</h3>
+      <p>Email: Cakhagf@Gmail.com</p>
+    </div>
+    <div class="box">
+      <h3>Alamat Sekolah</h3>
+      <p>SMP Rumah IT AL IMAM NAFI</p>
+      <p>Jl. METLAND CLUSTER EBONY, Indonesia</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Website Pelajar IT Pemula. Dibuat dengan semangat belajar!</p>
+  </footer>
+</body>
+</html>
+
+ini pengertiannya :
+
+<!-- section adalah bagian bagian utama yang mengarahkan pengguna ke berbagai bagian atau halaman utama  -->
+<!-- footer adalah eleman navigasi -->
+<!-- flex-wrap adalah properti css -->

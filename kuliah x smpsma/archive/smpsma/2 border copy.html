@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        .flex{
+            display: flex;
+        }
+        .jcc{
+            justify-content: center;
+        }
+        .aic{
+            align-items: center;
+        }
+        .posab{
+            position: absolute;
+            font-size: 24px;
+        }
+        .posre{
+            position: relative;
+        }
+        section{
+            height: 100vh;
+        }
+        .bungkus{
+            background-color: tomato;
+            border-style: dashed;
+            padding: 10px 20px;
+            position: relative; /* Needed for absolute positioning of '+' signs */
+        }
+        /* Positioning + signs at each corner */
+        .top-left {
+            left: 0;
+            top: 0;
+            /* transform: translate(-50%, -50%); */
+            transform: translate(-50%,-50%);
+            /* background-color: aqua; */
+        }
+        .top-right {
+            right: 0;
+            top: 0;
+            transform: translate(50%, -50%);
+        }
+        .bottom-left {
+            left: 0;
+            bottom: 0;
+            transform: translate(-50%, 50%);
+        }
+        .bottom-right {
+            right: 0;
+            bottom: 0;
+            transform: translate(50%, 50%);
+        }
+        .bungkuslg{
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section class="flex jcc aic">
+        <a href="" class="bungkus posre">
+            <h1 class="posab top-left"><strong>+</strong></h1>
+            <h1 class="posab top-right">+</h1>
+            <h1 class="posab bottom-left">+</h1>
+            <h1 class="posab bottom-right">+</h1>
+            <div class="bungkuslg flex jcc aic">
+                tes
+            </div>
+        </a>
+    </section>
+</body>
+</html>

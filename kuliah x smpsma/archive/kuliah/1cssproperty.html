@@ -1,0 +1,51 @@
+<!-- 
+display block = mengatur susunan elemen menjadi vertikal
+display flex = mengatur susunan elemen menjadi horizontal
+anchor = elemen yg mengalihkan ke halaman lain
+aic = mengatur anak yg ber-display flex agar sejajar vertikal
+jcsb = agar anak ber-display flex rata ujung ke ujung
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex{
+            display: flex;
+        }
+        .block{
+            display: block;
+        }
+        .ijo{
+            background-color: greenyellow;
+        }
+        .tomat{
+            background-color: tomato;
+        }
+        a{
+            color: #000;
+            text-decoration: none;
+        }
+        .aic{
+            align-items: center;
+        }
+        .jcsb{
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="bungkus ijo flex aic jcsb"> 
+        <!-- <p>db vs df</p>
+        <p>db vs df</p>
+        <p>db vs df</p>
+        <p>db vs df</p> -->
+        <h1>Reza Collection</h1>  
+        <a target="_blank" href="https://wa.me/6285811383833">
+            google
+        </a>
+    </div>
+</body>
+</html>

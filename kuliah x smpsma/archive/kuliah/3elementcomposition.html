@@ -1,0 +1,86 @@
+<!-- 
+jarak icon nya kebanyakan
+indentasi = beberapa spasi yg menandakan baris tersebut anak dari baris diatasnya
+https://i.pinimg.com/736x/ed/ae/66/edae66347456e54463e7e687ada8561a.jpg
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a{
+            color: #000;
+            text-decoration: none;
+        }
+        .flex{
+            display: flex;
+        }
+        .block{
+            display: block;
+        }
+        .ijo{
+            background-color: greenyellow;
+        }
+        .tomat{
+            background-color: tomato;
+        }
+
+        .aic{
+            align-items: center;
+        }
+        .jcc{
+            justify-content: center;
+        }
+        .jcsb{
+            justify-content: space-between;
+        }
+        header{
+            /* 4arah */
+            /* padding: 25px; */
+            /*atasbawah kirikanan*/
+            /* padding: 5px 10px;  */
+            /* atas kanan bawah kiri , trbl */
+            padding: 50px 50px 30px 20px; 
+        }
+        .kiri{
+            gap: 8px;
+        }
+        .kiri i{    
+            font-size: 22px; 
+        }
+    </style>
+</head>
+<body>
+    <header class="flex tomat aic jcsb">
+        <div class="kiri flex aic">
+            <i class="fa-solid fa-pen-nib"></i>
+            <h1>Reza</h1>
+        </div>
+        <div class="kanan">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="kiri">
+            <h1>I'm a</h1>
+            <h1>Designer</h1>
+            <p>also tholabul ilmi, wal faqir ilallah.</p>
+            <i class="fa-solid fa-play"></i>
+            <p>about me</p>
+        </div>
+        <div class="kanan">
+
+        </div>
+    </div>
+</body>
+</html>

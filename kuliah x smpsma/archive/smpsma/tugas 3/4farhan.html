@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: arial;
+            box-sizing: border-box;
+        }
+        .navbar {
+            justify-content: space-between;
+            border: solid 1px rgb(27, 66, 27);
+            align-items: center;
+            display: flex;
+            padding-inline: 10px;
+            padding-block: 20px;
+            background-color: rgb(27, 79, 29);
+        }
+        .kanan {
+            align-items: center;
+            gap: 20px;
+            display: flex;
+        }
+        .kanan img{
+            width: 50px;
+        }
+        .kanan .title{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .kanan .tombol {
+            display: flex;
+            padding: 2px 10px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 22px;
+            align-items: center;
+        }
+        .kanan .a{
+            font-size: 15px;
+            gap: 10px;
+            padding: 5px 10px;
+        }
+        .kanan .tombol .down {
+            color: rgb(231, 231, 231);
+        }
+        .kiri {
+            display: flex;
+
+            gap: 20px;
+        }
+        .kiri {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .kiri .a {
+            display: flex;
+            gap: 10px;
+            padding: 5px 10px;
+            border-radius: 22px;
+            background-color: rgb(214, 214, 214);
+            font-size: 15px;
+            font-weight: normal;
+            border: solid 1px gray;
+        }
+        .kiri nav ul{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .kiri nav ul li a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        .kiri .plus {
+            padding: 5px 10px;
+            background-color: rgb(60, 184, 76);
+            border: dotted 1px rgb(151, 225, 182);
+        }
+        .kiri .fa-spotify {
+            font-size: 45px;
+            color: rgb(60, 171, 48);
+        }
+    </style>
+</head>
+<body>
+        <header class="navbar">
+            <div class="kanan">
+                <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Spotify_App_Logo.svg" alt=""></i></div>
+                <div class="title">Spotify</div>
+                <div class="tombol">
+                    <div class="down"><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+            </div>
+            <div class="kiri">
+                <div class="tombol">
+                    <div class="a"> <i class="fa-solid fa-search"></i></div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="">Premium</a></li>
+                        <li><a href="">Support</a></li>
+                        <li><a href="">Sign up</a></li>
+                    </ul>
+                </nav>
+                <div class="plus">Log in</div>
+                <div class="logo"><i class="fa-brands fa-spotify"></i></div>
+            </div>
+        </header>
+</body>
+</html>

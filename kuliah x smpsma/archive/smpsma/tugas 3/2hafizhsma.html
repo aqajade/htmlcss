@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navbar Keren</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Kaushan Script", cursive;
+    }
+    body {
+        background: #f8f9fa;
+    }
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    .flex {
+        display: flex;
+    }
+    .aic {
+        align-items: center;
+    }
+    .jcsb {
+        justify-content: space-between;
+    }
+    header {
+        background: linear-gradient(90deg, rgb(75, 241, 241), rgb(240, 243, 63));
+        padding: 15px 40px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        top: 0;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .bungkus1 i {
+        font-size: 30px;
+        margin-right: 10px;
+        color: #5621f2;
+    }
+    .bungkus1 h2 {
+        letter-spacing: 1.5px;
+        font-weight: 600;
+    }
+    .bungkus2 {
+        gap: 20px;
+        background: rgba(255, 255, 255, 0.4);
+        padding: 8px 20px;
+        border-radius: 25px;
+        backdrop-filter: blur(6px);
+        transition: 0.3s;
+    }
+    .bungkus2 a {
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+   
+    .bungkus3 a {
+        background: #f0f33f;
+        padding: 10px 20px;
+        border-radius: 25px;
+        font-weight: 500;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+    }
+
+   
+    header .bungkus2 a:hover {
+        background-color: rgba(255,255,255,0.8);
+        transform: scale(1.05);
+    }
+    header .bungkus3 a:hover {
+        background: #c3be23;
+        color: white;
+        transform: scale(1.05);
+    }
+</style>
+</head>
+<body>
+
+<header class="flex aic jcsb">
+    <div class="bungkus1 flex aic">
+        <i class="fa-brands fa-apple fa-beat-fade"></i>
+        <h2>Hafizh Albani</h2>
+    </div>
+    <div class="bungkus2 flex aic">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="bungkus3 flex aic">
+        <a href="#">Connect With Me</a>
+    </div>
+</header>
+
+</body>
+</html>

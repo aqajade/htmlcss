@@ -1,0 +1,170 @@
+<!-- 
+jarak icon nya kebanyakan
+indentasi = beberapa spasi yg menandakan baris tersebut anak dari baris diatasnya
+https://i.pinimg.com/736x/ed/ae/66/edae66347456e54463e7e687ada8561a.jpg
+gambar:
+https://i0.wp.com/zaloraadmin.wpcomstaging.com/wp-content/uploads/2024/03/cara-memakai-sorban.png?fit=1200%2C620&ssl=1
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=DM+Serif+Display:ital@0;1&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Righteous&family=Special+Gothic+Expanded+One&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "League Spartan", sans-serif;
+            font-weight: 900; 
+        }
+        a{
+            color: #000;
+            text-decoration: none;
+        }
+        .flex{
+            display: flex;
+        }
+        .block{
+            display: block;
+        }
+        .ijo{
+            background-color: greenyellow;
+        }
+        .tomat{
+            background-color: tomato;
+        }
+
+        .aic{
+            align-items: center;
+        }
+        .jcc{
+            justify-content: center;
+        }
+        .jcsb{
+            justify-content: space-between;
+        }
+        .posab{
+            position: absolute;
+        }
+        .posre{
+            position: relative;
+        }
+        header{
+            /* 4arah */
+            /* padding: 25px; */
+            /*atasbawah kirikanan*/
+            /* padding: 5px 10px;  */
+            /* atas kanan bawah kiri , trbl */
+            padding: 50px 50px 30px 20px; 
+        }
+        .kiri{
+            gap: 8px;
+        }
+        .kiri i{    
+            font-size: 22px; 
+        }
+        .isihero h1{
+            font-size: 200px;
+        }
+        .h1atas{
+            color: #3d3737;
+        }
+        .h1bawah{
+            color: #ffffff;
+        }
+        body{
+            background-color: #070707;
+        }
+        .fdc{
+            flex-direction: column;
+        }
+        .tal{
+            text-align: left;
+        }
+        .hero{
+            padding-left: 250px;
+            padding-top: 100px;
+        }
+        .hero p{
+            padding-top: 40px;
+            font-size: 25px; 
+            color: #3d3737;
+        }
+        .hero i{
+            background-color: rgb(157, 86, 204);
+            color: white;
+            padding: 25px 40px 25px 25px;
+        }
+        .bungkusbawah{
+            padding-top: 20px;
+            gap: 20px;
+        }
+        .bungkusbawah p{
+            padding-bottom: 40px;
+            color:white;
+            letter-spacing: 2px;
+            font-weight: 400; 
+        }
+        .hero img{
+            /* z-index: 10; */
+            right: 0;   
+            bottom: 0;
+            height: 658px;     
+        }
+        .about{ 
+            background-color: tomato;
+            height: 100vh;
+        }
+        header{
+            color: white;
+            width: 78%; 
+            /* background-color: tomato; */
+            margin-left: 14%;
+        }
+        header a{
+            color: rgb(171, 152, 152);
+        }
+        .bungkusatas{
+            width: 100%;
+            margin: 0 auto;
+        }
+    </style>    
+</head>
+<body>   
+    <div class="bungkusatas"> 
+        <header class="flex aic jcsb">
+            <div class="kiri flex aic">
+                <i class="fa-solid fa-pen-nib"></i>
+                <h1>Reza</h1>
+            </div>
+            <div class="kanan">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </div>
+        </header>
+    </div>
+    <div class="hero posre">
+        <div class="isihero">
+            <h1 class="h1atas">I'm a</h1>
+            <h1 class="h1bawah">Designer</h1>
+            <p>also tholabul ilmi, wal faqir ilallah.</p>
+            <div class="bungkusbawah flex aic">     
+                <i class="fa-solid fa-play"></i>
+                <p>about me</p>
+            </div>
+        </div>
+        <img src="heroimg.png" alt="" class="posab">
+    </div>
+    <!-- <section class="about">
+        <h1>15 Years of Web-Dev Experience</h1>
+    </section>
+    <section class="work">
+        <h1>Case study of my clients project</h1>
+    </section> -->
+</body>
+</html>

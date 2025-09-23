@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lading Page</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: arial;
+        }
+        body {
+            background: repeating-linear-gradient(
+                45deg,
+                #0f0f0f,
+                #0f0f0f 10px,
+                #383333 10px,
+                #121311 11px
+                );
+           }
+        .container-header{
+            display: flex; 
+            justify-content: center;
+            align-items: start;
+            height: 100vh; 
+            }
+        .navbar{
+            background-color: #333;
+            color: #fff;
+            padding: 20px 30px;
+            display: flex;
+            border-radius: 22px;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin-top: 20px;
+        }
+        .navbar .logo{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .navbar nav ul li{
+            display: inline;
+        }
+        .navbar nav ul li a{
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 10px;
+            transition: background-color 0.3s;
+        }
+        .navbar nav ul li a:hover{
+            background-color: #555;
+        }
+        .navbar nav ul li a.active{
+            color: #e4c900;
+        }
+        .get-started{
+            background-color: #e4c900;
+            color: #333;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 33px;
+            cursor: pointer;
+            transition: background-color 0.3px;
+        }
+        .get-started:hover{
+            background-color: yellow;
+        }
+        .full{
+            width: 100%;
+            background-color: tomato;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-header">
+        <header class="navbar">
+            <div class="logo">STRATEGY</div>
+            <nav>
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="about.hmtl">About</a></li>
+                    <li><a href="services.html">services</a></li>
+                    <li><a href="portofolio.html">Portofolio</a></li>
+                    <li><a href="team.hmtl">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="get-started">Get Started</button>
+        </header>
+    </div>
+</body>
+</html>

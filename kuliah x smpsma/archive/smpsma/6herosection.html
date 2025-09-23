@@ -1,0 +1,95 @@
+<!-- 
+
+                <li><a href=""><i class="fa-regular fa-house"></i><span class="home">Home</span></a></li>
+                <li><a href=""><i class="fa-regular fa-user"></i><span>About</span></a></li>
+                <li><a href=""><i class="fa-regular fa-file"></i><span>resume</span></a></li>
+                <li><a href=""><i class="fa-solid fa-table-cells"></i><span>Portofolio</span></a></li>
+                <li><a href=""><i class="fa-regular fa-credit-card"></i><span>Services</span></a></li>
+                <li><a href=""><i class=" fa-regular fa-envelope"></i><span>contact</span></a></li>
+            
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alice&family=Amatic+SC:wght@400;700&family=Bacasime+Antique&family=Baskervville:ital@0;1&family=Bellefair&family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Berkshire+Swash&family=Borel&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Della+Respira&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Estonia&family=Forum&family=Gideon+Roman&family=Great+Vibes&family=Henny+Penny&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Junge&family=Kaushan+Script&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Libre+Caslon+Display&family=Lora:ital,wght@0,400..700;1,400..700&family=Mountains+of+Christmas:wght@400;700&family=Oranienbaum&family=Original+Surfer&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Prata&family=Qwigley&family=Viaoda+Libre&family=Yeseva+One&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Kaushan Script", cursive;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        .flex{
+            display: flex;
+        }
+        .jcc{
+            justify-content: center;
+        }
+        .aic{
+            align-items: center;
+        }
+        .jcsb{
+            justify-content: space-between;
+        }
+        .fdc{
+            flex-direction: column;
+        }
+        .tac{
+            text-align: center;
+        }
+        .kiri{
+            height: 100vh;
+            width: 25%;
+            background-color: #11112c;
+            color: white;
+        }
+        .kiri img{
+            width: 80%;
+            padding-top: 20px;
+        }
+        .socials{
+            gap: 5px;
+        }
+        .socials a{
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .kanan{
+            width: 80%;
+            height: 100vh;
+            background: url('https://media.istockphoto.com/id/896858190/photo/handsome-man-downtown.jpg?s=612x612&w=0&k=20&c=D3OV9KclTpnAdjG01PatkaSUtIE_8seDRRvGfUj1doY=')
+            no-repeat center center fixed;
+            background-size: cover;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="hero flex">
+        <div class="kiri flex fdc">
+            <div class="flex jcc">
+                <img src="profile.png" alt="">
+            </div>
+            <h2 class="tac">Reza</h2>
+            <div class="socials flex jcc">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-skype"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="kanan"></div>
+    </div>
+</body>
+</html>

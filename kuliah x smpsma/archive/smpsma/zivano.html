@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: arial;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: solid 1px rgb(165, 165, 165);
+            padding-inline: 10px;
+            padding-block: 20px;
+        }
+        .right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .right img{
+            width: 50px;
+        }
+        .right .title{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .right .button {
+            display: flex;
+            align-items: center;
+            background-color: rgb(192, 192, 192);
+            border-radius: 22px;
+            padding: 2px 10px;
+        }
+        .right .v{
+            gap: 10px;
+            padding: 5px 10px;
+            font-size: 15px;
+        }
+        .right .button .bawah {
+            color: rgb(58, 58, 58);
+        }
+        .left {
+            display: flex;
+
+            gap: 20px;
+        }
+        .left {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .left .v {
+            display: flex;
+            gap: 10px;
+            padding: 5px 10px;
+            border-radius: 22px;
+            background-color: rgb(214, 214, 214);
+            font-size: 15px;
+            font-weight: normal;
+            border: solid 1px gray;
+        }
+        .left nav ul{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .left nav ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        .left .plus {
+            padding: 5px 10px;
+            background-color: rgb(183, 243, 245);
+            /* border: dotted 1px rgb(49, 195, 221); */
+            border: dashed 1px rgb(71, 217, 243);
+        }
+        .left .fa-github {
+            font-size: 20px;
+            color: gray;
+        }
+        .plus{
+            position: relative;
+        }
+        .kiriatas{
+            position: absolute;
+            left: 0;
+            top: 0;
+            /* background-color: tomato; */
+            transform: translate(-50%,-50%);
+            color: rgb(46, 180, 203);
+            font-weight: 100;
+        }
+        .kananatas{
+            position: absolute;
+            right: 0;
+            top: 0;
+            /* background-color: tomato; */
+            transform: translate(50%,-50%);
+            color: rgb(46, 180, 203);
+            font-weight: 100;
+        }
+        .kiribawah{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            /* background-color: tomato; */
+            transform: translate(-50%,50%);
+            color: rgb(46, 180, 203);
+            font-weight: 100;
+        }
+        .kananbawah{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            /* background-color: tomato; */
+            transform: translate(50%,50%);
+            color: rgb(46, 180, 203);
+            font-weight: 100;
+        }
+    </style>
+</head>
+<body>
+        <header class="navbar">
+            <div class="right">
+                <div class="logo"><img src="https://images.icon-icons.com/2107/PNG/512/file_type_tailwind_icon_130128.png" alt=""></i></div>
+                <div class="title">tailwindcss</div>
+                <div class="button">
+                    <div class="v">v4.1</div>
+                    <div class="bawah"><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+            </div>
+            <div class="left">
+                <div class="button">
+                    <div class="v">Ctrl K <i class="fa-solid fa-search"></i></div>
+                    <div class="bawah"></div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="">Docs</a></li>
+                        <li><a href="">Docs</a></li>
+                        <li><a href="">Docs</a></li>
+                        <li><a href="">Docs</a></li>
+                    </ul>
+                </nav>
+                <div class="plus">plus
+                    <div class="kiriatas">+</div>
+                    <div class="kiribawah">+</div>
+                    <div class="kananatas">+</div>
+                    <div class="kananbawah">+</div>
+                </div>
+                <div class="logo"><i class="fa-brands fa-github"></i></div>
+            </div>
+        </header>
+</body>
+</html>

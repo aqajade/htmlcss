@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            border-bottom: 1px solid #ccc;
+        }
+        .navbar .kiri {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .kiri .title {
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .navbar .kanan {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .kanan ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+        .kanan ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .kanan ul li a:hover {
+            color: #0d09e8;
+        }
+        .kanan .get-started {
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            background-color: #0062ff;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="kiri">
+            <img  width="30px" src="https://cdn.prod.website-files.com/66c503d081b2f012369fc5d2/674000d6c0a42d41f8c331be_dropbox-2-logo-png-transparent.png" alt="">
+            <div class="title">Dropbox</div>
+        </div>
+        <div class="kanan">
+            <div class="fa-solid fa-globe"></div>
+            <ul>
+                <li><a href="">Sign up</a></li>
+                <li><a href="">Log in</a></li>
+            </ul>
+            <button class="get-started">Get started</button>
+            <div class="fa-solid fa-bars"></div>
+        </div>
+    </header>
+</body>
+</html>

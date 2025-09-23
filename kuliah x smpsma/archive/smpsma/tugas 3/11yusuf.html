@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap');
+    *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Mozilla Headline", sans-serif;
+    }
+    body {
+    background: repeating-linear-gradient(
+    45deg,
+    #000000,
+    #000000 10px,
+    #2c2c2c 10px,
+    #2d2d2d 11px);
+    color: rgb(0, 0, 0);
+    }
+    .container-header{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+    margin: 10px 0px ;
+    }
+    .navbar {
+    background-color: #494949;
+    color: #020202;
+    padding: 10px 20px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; 
+    padding: 10px 15px;
+    }
+    .navbar .fa-notdog-duo{
+    font-size: 50px;
+    color: rgb(49, 50, 33);
+    }
+
+    .navbar .text{
+    font-size: xx-large;
+    color: white;
+    }
+    .navbar .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .navbar .button .v{
+    background-color: #f2ff00;
+    color: rgb(6, 6, 6);
+    border: none;
+    padding: 5px 5px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-right: 20px;
+    }
+    .navbar .button .S{
+    background-color: #f2ff00;
+    color: rgb(6, 6, 6);
+    border: none;
+    padding: 5px 5px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-left: 20px;
+    }
+    .navbar nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    }
+    .navbar nav ul li{
+        display: inline;
+    }
+    .navbar nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+    }
+    .navbar nav ul li a:hover {
+    background-color: #555;
+    }
+
+        .navbar nav ul li a.active {
+            color: #d4c900;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-header">
+        <header class="navbar">
+            <div class="title">
+                <i class="fa-notdog-duo fa-solid fa-comment"></i>
+                <div class="text">CIRCLECHAT</div>
+            </div>
+            <div class="button">
+                <button class="v">v4.1<i class="fa-solid fa-chevron-down"></i></button>
+                <button class="S"><i class="fa-solid fa-magnifying-glass"></i>search</button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Docs.html">Docs</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Showcase.html">Showcase</a></li>
+                    <li><a href="Sponsor.html">Sponsor</a></li>
+                    <li><a href="Index.html" class="active">Plus</a></li>   
+                </ul>
+            </nav>
+        </div>
+        </header>
+</body>
+</html>

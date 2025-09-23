@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MHA Production</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+        .tdn{
+            text-decoration: none;
+        }
+        body{
+            display: flex;
+        }
+        .left {
+            width: 250px;
+            height: 100vh;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0;
+            color: white;
+        }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 5px solid #ffffff;
+            box-shadow: 0 0 10px;
+            object-fit: cover;
+        }
+        .name {
+            margin-top: 10px;
+            font-size: 22px;
+            font-weight: bold;
+            font-family: "Mozilla Headline", sans-serif;
+        }
+        .social-icons {
+            margin: 15px 0;
+            display: flex;
+            gap: 8px;
+        }
+        .social-icons a {
+            width: 35px;
+            height: 35px;
+            background-color: #1a1d33;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: white;
+            font-size: 16px;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            background-color: grey;
+            transition: 0.8s;
+        }
+        nav {
+            margin-top: 20px;
+            width: 100%;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            width: 100%;
+        }
+        nav ul li a {
+            display: flex;
+            align-items: center;
+            padding: 12px 20px;
+            font-size: 16px;
+            transition: 0.3s;
+            color: white;
+        }
+        nav ul li a i {
+            margin-right: 10px;
+            font-size: 18px;
+            width: 20px;
+            text-align: center;
+        }
+        nav ul li a:hover{
+            background-color: grey;
+        }
+        .right{
+           flex: 1;
+           background: url('https://i.pinimg.com/1200x/03/f4/23/03f4230bd7d35c6fe704b9c5029ae198.jpg') no-repeat center center/cover;
+
+        }
+        h1 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: 450px;
+            margin-right: 400px;
+            color: white;
+            font-family: "Mozilla Headline", sans-serif;
+            border: 1px;
+        }
+        h4 {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5px;
+            margin-right: 400px;
+            font-family: "Mozilla Headline", sans-serif;
+
+        }
+        .about {
+            color: gold;
+        }
+        .navbar li a {
+            text-decoration: none;
+        }
+        .foot {
+            font-size: 15px;
+            text-align: center;
+            padding: 10px;
+            opacity: 0.8;
+            /* margin-top: 390px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        <img src="Logo MHA.png" alt="Profile" class="profile-pic">
+        <div class="name">MHA Production</div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-circle-user about"></i></i>About</a></li>
+                <li><a href="#"><i class="fa-regular fa-file"></i>Document</a></li>
+                <li><a href="#"><i class="fa-solid fa-suitcase"></i>Project</a></li>
+                <li><a href="#"><i class="fa-solid fa-list"></i></i>Portfolio</a></li>
+                <li><a href="#"><i class="fa-solid fa-gears"></i>Services</a></li>
+                <li><a href="#"><i class="fa-regular fa-envelope"></i>Email</a></li>
+            </ul>
+        </nav>
+        <div class="foot">
+            <p>✆ MHA Production<br><strong>Has Copyright</strong></p>
+        </div>
+    </div>
+    <div class="right">
+        <h1>MHA Production ✍</h1>
+        <h4>Since 2024 ⏎</h4>
+    </div>
+</body>
+</html>
