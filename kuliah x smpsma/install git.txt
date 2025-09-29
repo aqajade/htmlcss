@@ -7,7 +7,10 @@ windows:
 macbook:
     munculin terminal: cmd+spasi , ketik terminal , enter
     git --version , butuh command line tools download aja
-    mac yg versi terbaru bisa install homebrew 
+    brew --version , kalau blm ada install 
+        bedanya git sm homebrew: git itu u/ aplikasi coding laptop ke online, homebrew sebagai gerbang install aplikasi macbook
+    gh --version , 
+
 
 di root folder: 
     setting default branch ke main 
