@@ -1,65 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .posfi{
-            position: fixed; 
-        }
-        a{
-            text-decoration: none;
-        }
-        .bgbiru{
-            background-color: blue;
-        }
-        .container{
-            padding-inline: 20px;
-        }
-        .opendiscord{
-            background-color: white;
-            color: black;
-            padding: 10px 30px;
-            border-radius: 30px;
-            right: 30px; 
-        }
-        section{
-            height: 100vh;
-            padding-top: 30px;
-        }
-        .bgijo{background-color: green;}
-        header a{
-            color: white;   
-            padding: 10px 20px;
-            background-color: tomato;
-        }
-        .w-full{
-            width: 100%;
-            height: 20px; 
-        }
-    </style>
-</head>
-<body class="bgbiru">
-    <div class="container">
-        <a class="opendiscord posfi" href="">
-            Open Discord
-        </a>
-        <section class="hero">
-            <header class="flex w-full bgijo">
-                <div class="headerlogo">
-                    <a href="">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=DM+Serif+Display:ital@0;1&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Forum&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&family=Quicksand:wght@300..700&family=Righteous&family=Special+Gothic+Expanded+One&display=swap');
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Montserrat", sans-serif;
+            }
+            .posfi{
+                position: fixed; 
+            }
+            a{
+                text-decoration: none;
+            }
+            .bgbiru{
+                background-color: blue;
+            }
+            .container{
+                padding-inline: 20px;
+            }
+            .opendiscord{
+                background-color: white;
+                color: black;
+                padding: 10px 30px;
+                border-radius: 15px; 
+                right: 20px;
+                top: 32px; 
+                transition: .4s;
+                font-weight: 700;
+            }
+            .opendiscord:hover{
+                background-color: rgb(201, 197, 197);
+            }
+            section{
+                padding-top: 30px;
+            }
+            .bgijo{background-color: green;}
+            header a:not(:has(img)){
+                color: white;   
+                padding: 10px 20px;
+                border-radius: 10px;
+                background-color: tomato;
+                transition: background-color 0.4s ease;
+                font-weight: 700;
+            }
+            header a:not(:has(img)):hover{
+                background-color: blue;
+                
+            }
+            .w-full{
+                width: 100%;
+            }
+            header{
+                gap: 20px;
+            }
+            .flex{
+                display: flex;
+            }
+            .aic{
+                align-items: center;
+            }
+            .bgmerah{
+                background-color: red;
+            }
+            .h-full{
+                height: 100%;
+            }
+            .h-vh{
+                height: 100vh;
+            }
+            header a{
+                display: flex;
+            }
+        </style>
+    </head>
+    <body class="bgbiru">
+        <div class="container">
+            <a class="opendiscord posfi" href="">
+                Open Discord
+            </a>
+            <section class="hero w-full h-vh">
+                <header class="flex w-full aic bgijo">
+                    <a class="bgmerah" href="">
                         <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/67d00cf7266d2c75571aebde_Example.svg" alt="">
                     </a>
-                </div>
-                <a href="">Download</a>
-                <a href="">Nitro</a>
-                <a href="">Discover</a>
-            </header>
-        </section>
-        <section class="access bgijo">
+                    <a href="">Download</a>
+                    <a href="">Nitro</a>
+                    <a href="">Discover</a>
+                    <a href="">Safety</a>
+                    <a href="">Quests</a>
+                    <a href="">Support</a>
+                    <a href="">Blog</a>
+                    <a href="">Developers</a>
+                    <a href="">Contact</a>
+                    <a href="">Careers</a>
+                </header>
+            </section>
+            <section class="access bgijo">
 
-        </section>
-    </div>
-</body>
-</html>
+            </section>
+        </div>
+    </body>
+    </html>

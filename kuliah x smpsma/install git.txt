@@ -1,3 +1,4 @@
+github.com/aqajade/htmlcss
 windows:
     munculin cmd: windows+r terus ketik cmd , enter 
     ketik git --version
@@ -39,3 +40,26 @@ mulai update repo:
     git push -u origin main
     
     
+
+
+############################################################
+
+pastiin branch utamanya main
+buat classic token di website
+
+cek direktori: ls
+    klo bener ini yg mau di push yaudah gas
+git init
+git add .
+git add --renormalize .
+
+install github cli: cli.github.com
+gh auth login
+gh repo create apadah --public --source=. --remote=origin --push
+gh repo create appreza --public --source=. --remote=origin --push
+    klo mau bs --private u/ private repo
+
+cek udh ke sinkron apa blm: git remote -v
+
+
+semua omongan kan dihisab ya
