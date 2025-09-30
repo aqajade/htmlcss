@@ -1,3 +1,19 @@
+update terminal:
+
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/XAMPP/bin:$PATH"
+
+echo $PATH
+which uname
+which git
+uname -a
+
+nano ~/.zshrc
+    export PATH=/Applications/XAMPP/bin/
+    ganti jd:
+    export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/XAMPP/bin:$PATH"
+
+source ~/.zshrc
+
 github.com/aqajade/htmlcss
 windows:
     munculin cmd: windows+r terus ketik cmd , enter 
@@ -24,8 +40,8 @@ di root folder:
     isi data git 
         git config user.email "emailghantum@gmail.com"
         git config user.name "usernameghantum"
-        git config user.email "gholamreza.aqajade@gmail.com"
-        git config user.name "aqajade"
+        git config user.email "rezzzarea@gmail.com"
+        git config user.name "rezzzarea"
     inisialisasi folder local yg blm tersentuh git
         git init
     mensinkronkan root local ke public repo
