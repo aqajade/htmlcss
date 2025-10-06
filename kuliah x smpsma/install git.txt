@@ -1,3 +1,24 @@
+github.com/aqajade/htmlcss
+
+
+cara cek setup github udah aman atau belum
+
+##############################################################
+Warga macbook
+##############################################################
+    1 brew --version 
+    2 git --version 
+    3 gh --version
+##############################################################
+Warga windows
+##############################################################
+    1 git --version 
+    2 gh --version
+
+
+##############################################################
+yang macbook nya bermasalah = not found , ikuti langkah berikut
+##############################################################
 update terminal:
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/XAMPP/bin:$PATH"
