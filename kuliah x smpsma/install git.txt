@@ -19,21 +19,24 @@ Warga windows
 ##############################################################
 yang macbook nya bermasalah = not found , ikuti langkah berikut
 ##############################################################
-update terminal:
-
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/XAMPP/bin:$PATH"
-
-echo $PATH
-which uname
-which git
-uname -a
-
-nano ~/.zshrc
-    export PATH=/Applications/XAMPP/bin/
-    ganti jd:
+ketik ini di terminal:
     export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/XAMPP/bin:$PATH"
+    echo $PATH
+    which uname
+    which git
+    uname -a
 
-source ~/.zshrc
+ketik: nano ~/.zshrc
+nanti akan muncul seperti teks editor di terminal antum
+kalau tulisannya kaya gini: export PATH=/Applications/XAMPP/bin/
+antum ganti jd: export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/XAMPP/bin:$PATH"
+terus di save, tutup teks editor nano nya 
+
+update terminal antum di terminal ketik: source ~/.zshrc
+dah selesai
+############################################################################################
+
+
 
 github.com/aqajade/htmlcss
 windows:
