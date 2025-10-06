@@ -1,19 +1,17 @@
 github.com/aqajade/htmlcss
 
-
 cara cek setup github udah aman atau belum
-
-##############################################################
-Warga macbook
-##############################################################
-    1 brew --version 
-    2 git --version 
-    3 gh --version
-##############################################################
-Warga windows
-##############################################################
-    1 git --version 
-    2 gh --version
+#################################################################
+    Warga macbook
+#################################################################
+        1 brew --version 
+        2 git --version 
+        3 gh --version
+#################################################################
+    Warga windows
+#################################################################
+        1 git --version 
+        2 gh --version
 
 
 ##############################################################
@@ -38,6 +36,14 @@ dah selesai
 
 
 
+
+
+
+
+############################################################################################
+LANGKAH INSTALL UNTUK ANAK BARU
+############################################################################################
+
 github.com/aqajade/htmlcss
 windows:
     munculin cmd: windows+r terus ketik cmd , enter 
@@ -50,7 +56,6 @@ macbook:
     brew --version , kalau blm ada install 
         bedanya git sm homebrew: git itu u/ aplikasi coding laptop ke online, homebrew sebagai gerbang install aplikasi macbook
     gh --version , 
-
 
 di root folder: 
     setting default branch ke main 
