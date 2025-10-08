@@ -17,6 +17,10 @@ cara cek setup github udah aman atau belum
 ##############################################################
 yang macbook nya bermasalah = not found , ikuti langkah berikut
 ##############################################################
+
+
+
+
 ketik ini di terminal:
     export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/XAMPP/bin:$PATH"
     echo $PATH
@@ -111,3 +115,81 @@ cek udh ke sinkron apa blm: git remote -v
 
 
 semua omongan kan dihisab ya
+
+
+
+
+
+###########################################################################
+
+
+
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH"
+Now try:
+
+which uname uname which git
+You should now see uname and others working again.
+
+🛠 Step 2: Permanently Fix Your $PATH
+Right now, your system is starting up with a broken $PATH. We need to fix your shell config file so it loads the correct paths every time.
+🔧 Fix .zshrc (for zsh)
+1. Open .zshrc in a basic text editor like nano:
+
+nano ~/.zshrc
+1. Look for any line like:
+
+export PATH=/Applications/XAMPP/bin:/Applications/XAMPP/bin/
+1. Either delete it or replace with:
+
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/XAMPP/bin"
+1. Save and exit (Ctrl + O, then Enter, then Ctrl + X in nano).
+2. Reload the shell:
+
+source ~/.zshrc
+
+✅ Step 3: Install Git
+Now that your $PATH is fixed and commands work again, you can install Git via:
+Option A: Homebrew
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" brew install git
+Option B: Xcode CLI (also installs Git)
+
+xcode-select --install
+
+💡 Pro Tip
+Avoid completely replacing your $PATH with third-party directories (like XAMPP) — always append to it instead:
+✅ Good:
+
+export PATH="/usr/local/bin:/usr/bin:/bin:/Applications/XAMPP/bin:$PATH"
+🚫 Bad:
+
+export PATH="/Applications/XAMPP/bin"
+
+Let me know if the temporary export PATH=... fix works — and we can go from there.
+You said:
+in nano zshrc i make it export PATH=/Applications/XAMPP/bin:/Applications/XAMPP/bin:$PATH so i can still git --version and not conflicting the XAMPP is it ?
+ChatGPT said:
+You're very close — and your thinking is on the right track! Let’s fine-tune it a little to make sure everything works without breaking system commands or XAMPP.
+
+✅ Correct and Safe $PATH Order
+This is the recommended version to put in your ~/.zshrc:
+
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/XAMPP/bin:$PATH"
+Why this works:
+* System paths come first → Ensures core commands like ls, uname, git, etc. always work.
+* XAMPP path is included → So you can still use mysql, php, or other XAMPP tools.
+* $PATH is appended at the end → Keeps any additional custom paths you may already have.
+
+🔄 Apply the Fix
+1. Open .zshrc again:
+
+nano ~/.zshrc
+1. Replace the old line with the recommended one above.
+2. Save + Exit: Ctrl + O, Enter, then Ctrl + X.
+Then apply the changes:
+
+source ~/.zshrc
+Now verify things:
+
+which git git --version which php php -v which uname uname
+
