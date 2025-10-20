@@ -1,1 +1,1 @@
-buat content section, belah layout section jadi 2 , kanan atau kiri nya gambar lalu sisi lainnya tulisan yg mendeskripsikan gambar tsb
+buat content section 1, belah layout section jadi 2 , kanan atau kiri nya gambar lalu sisi lainnya tulisan yg mendeskripsikan gambar tsb

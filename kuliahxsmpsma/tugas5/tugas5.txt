@@ -1,0 +1,1 @@
+buat content section2 , minimal tukar posisi dari section1 misal gambar kiri di section2 jadi di kanan

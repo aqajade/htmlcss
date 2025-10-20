@@ -1,0 +1,5 @@
+hero
+content1
+content2 
+stats
+footer
