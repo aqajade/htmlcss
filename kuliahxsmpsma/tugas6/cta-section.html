@@ -78,20 +78,65 @@
         .bgbiru{
             background-color: blue;
         }
+        .bgmerah{
+            background-color: red;
+        }
         .teksputih{
             color: white;
         }
         .tekssilver{
             color: rgb(199, 216, 216);
         }
-        
+        .kontencta{
+            height: 350px;
+            gap: 60px;
+        }
+        .headercta h2{
+            font-size: 3rem; 
+        }
+        .kontencta a{
+            padding: 12px 25px;
+            background-color: #000;
+            color: white;
+            border-radius: 15px;  
+            transition: .4s;
+        }
+        .kontencta a:hover{
+            border-radius: 100vh;
+            background-color: white;
+            color: black;
+            transition: .4s;
+        }
+        .kontencta *{
+            font-family: Helvetica;
+        }
+        /* cara naruh gambar sebagai bg di sebuah section */
+        .sectioncta{
+            background: 
+                url('https://img.freepik.com/premium-photo/programmer-working-computer-night-programmer-headphones-working-computer-software-development-programming-coding-concept-illustration-flat-style-generative-ai_804788-60625.jpg')
+                no-repeat center center fixed
+            ;
+            background-size: cover;
+        }
+        .headercta{
+            color: white;
+        }
+
+
+
     </style>    
 </head>
 <body>    
-    <section class="h-100vh w-full bgsilver">
+    <section class="sectioncta h-100vh w-full bgsilver flex aic">
+        <div class="kontencta w-full flex fdc jcc aic">
+            <div class="headercta">
+                <p class="tac">Thank you for visiting our website</p>
+                <h2>Let's Build Our Project</h2>
+            </div>
+            <a href="">Book a Call</a>
+        </div>
     </section>
     <section class="h-100vh w-full bgtomat">
     </section>
 </body>
 </html>
-    
