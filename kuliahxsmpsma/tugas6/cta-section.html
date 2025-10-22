@@ -90,6 +90,8 @@
         .kontencta{
             height: 350px;
             gap: 60px;
+            position: relative;
+            z-index: 2;
         }
         .headercta h2{
             font-size: 3rem; 
@@ -98,11 +100,12 @@
             padding: 12px 25px;
             background-color: #000;
             color: white;
-            border-radius: 15px;  
+            border-radius: 21px; 
+            border: 2px solid ; 
             transition: .4s;
         }
         .kontencta a:hover{
-            border-radius: 100vh;
+            border-radius: 25px;
             background-color: white;
             color: black;
             transition: .4s;
@@ -112,11 +115,22 @@
         }
         /* cara naruh gambar sebagai bg di sebuah section */
         .sectioncta{
-            background: 
+            background:
                 url('https://img.freepik.com/premium-photo/programmer-working-computer-night-programmer-headphones-working-computer-software-development-programming-coding-concept-illustration-flat-style-generative-ai_804788-60625.jpg')
                 no-repeat center center fixed
             ;
             background-size: cover;
+            position: relative;
+        }
+        .sectioncta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
         }
         .headercta{
             color: white;
