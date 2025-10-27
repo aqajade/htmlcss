@@ -87,64 +87,46 @@
         .tekssilver{
             color: rgb(199, 216, 216);
         }
-        .kontencta{
-            height: 350px;
-            gap: 60px;
-            position: relative;
-            z-index: 2;
+        .section-services{
+          padding-inline: 140px;
+          padding-block: 80px;
         }
-        .headercta h2{
-            font-size: 3rem; 
-        }
-        .kontencta a{
-            padding: 12px 25px;
-            background-color: #000;
-            color: white;
-            border-radius: 21px; 
-            border: 2px solid ; 
-            transition: .4s;
-        }
-        .kontencta a:hover{
-            border-radius: 25px;
-            background-color: white;
-            color: black;
-            transition: .4s;
-        }
-        .kontencta *{
-            font-family: Helvetica;
-        }
-        /* cara naruh gambar sebagai bg di sebuah section */
-        .sectioncta{
-            background:
-                url('https://img.freepik.com/premium-photo/programmer-working-computer-night-programmer-headphones-working-computer-software-development-programming-coding-concept-illustration-flat-style-generative-ai_804788-60625.jpg')
-                no-repeat center center fixed
-            ;
-            background-size: cover;
-            position: relative;
-        }
-        .sectioncta::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 1;
-        }
-        .headercta{
-            color: white;
-        }
+        article.services{
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          /* 
+          repeat(3,) u/ mengulang 3 kolom
+          fr = fraction = pecahan supaya terbagi rata
+          logika fr: 
+          misal repeat 4 1 fr, berarti 1 fr = 100% : 4 = 25%
+          kalau repeat 3 1fr , berarti 1 fr = 100% : 3 = 33%
 
-
+          
+          */
+        }
 
     </style>    
 </head>
 <body>    
-    <section class="sectioncta h-100vh w-full bgsilver flex aic">
-
+    <section class="section-services">
+      <article class="service-text">
+        <h2>What We Do</h2>
+        <p>We offer simple tech tech solutions to help your ideas grow</p>
+      </article>
+      <article class="services">
+        <div class="service-card">
+          <img src="website.svg" alt="">
+          <h3>Web Development</h3>
+          <p>Modern websites using HTML, CSS, JavaScript, and frameworks.</p>
+        </div>
+      </article>
     </section>
     <section class="h-100vh w-full bgtomat">
     </section>
-</body>
-</html>
+  </body>
+  </html>
+<!-- 
+  hero-content = kebab-case
+  heroContent = camelCase = hurufBesarMulaiDariKedua
+  hero_content = snake_Case = macam_ular_ber_underscore 
+-->
