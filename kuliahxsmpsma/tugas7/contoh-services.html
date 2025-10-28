@@ -90,21 +90,38 @@
         .section-services{
           padding-inline: 140px;
           padding-block: 80px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+          gap: 25px;
+          /* selalu ingat konsep DRY agar efektif , tidak mengulang-ulang kode kebanyakan  */
         }
         article.services{
+          display: grid;
           grid-template-columns: repeat(3, 1fr);
           grid-template-rows: repeat(2, 1fr);
+          gap: 25px;
           /* 
           repeat(3,) u/ mengulang 3 kolom
           fr = fraction = pecahan supaya terbagi rata
           logika fr: 
           misal repeat 4 1 fr, berarti 1 fr = 100% : 4 = 25%
           kalau repeat 3 1fr , berarti 1 fr = 100% : 3 = 33%
-
-          
           */
         }
-
+        section.section-services .services .service-card{
+          border: 1px solid rgb(43, 41, 41);
+          border-radius: 12px;
+          padding: 16px;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+        }
+        section.section-services .services .service-card img{
+          height: 48px;
+        }
+        
     </style>    
 </head>
 <body>    
