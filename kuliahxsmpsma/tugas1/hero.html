@@ -17,6 +17,9 @@
             font-family: Helvetica; 
             /* font-weight: 900;  */
         }
+        li{
+          list-style: none;
+        }
         a{
             color: #000;
             text-decoration: none;
@@ -88,16 +91,91 @@
             color: rgb(199, 216, 216);
         }
         .hero-section{
-            height: 100dvh;
+            height: 100vh;
             width: 100%;
-            background: url('./hero-bg.webp') ;
+            position: relative;
+            color: white;
+            /* background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            position: fixed; */
         }
-        
+        .hero-section img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+        }
+        .header-title{
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 30px;
+        }
+        header{
+            padding-inline: 30px; 
+            padding-block-start: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header nav ul{
+          display: flex;
+          gap: 20px;
+        }
+        header button{
+          width: 100px;
+          height: 40px;  
+          transition: .5s;
+          right: 30px; 
+        }
+        header button:hover{
+          width: 150px;
+          height: 40px;  
+          transition: .5s;
+        }
+        .hero-content{
+          display: flex;
+          align-items: center;
+          justify-content: end;
+          width: 100%; 
+          padding-top: 60px;
+          padding-right: 30px;
+        }
+        .hero-content h1{
+          width: 34%;
+          font-size: 110px;
+          font-family: Helvetica;
+          font-weight: 800; 
+          line-height: 100px;
+        } 
     </style>    
 </head>
 <body>    
   <section class="hero-section">
-
+    <img src="./hero-bg.webp" alt="">
+    <header>
+      <div class="header-title">
+        <i class="fa-solid fa-briefcase"></i>
+        <h2>Masbro</h2>
+      </div>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <button>
+        Let's Talk
+      </button>
+    </header>
+    <div class="hero-content">
+      <h1>Let's Build Our Project</h1>
+    </div>
+  </section>
+  <section class="h-100vh w-full bgtomat">
+    <h1>halo</h1>
   </section>
 </body>
 </html>
