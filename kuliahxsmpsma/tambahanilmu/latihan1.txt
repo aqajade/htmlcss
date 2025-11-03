@@ -1,0 +1,3 @@
+1) apa yg dimaksud fr dalam layout grid ?
+2) apa bedanya gap bila diisi dengan 1 dan 2 value?
+3) tuliskan media query u/ responsive pada layar desktop (1024ps)
