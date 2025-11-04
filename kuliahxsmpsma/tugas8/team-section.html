@@ -75,6 +75,9 @@
         .bgijo{
             background-color: greenyellow;
         }
+        .bgkuning{
+            background-color: yellow;
+        }
         .bgbiru{
             background-color: blue;
         }
@@ -87,16 +90,100 @@
         .tekssilver{
             color: rgb(199, 216, 216);
         }
-        
-        
+        .service-title{
+          padding-inline: 20px;
+          padding-block: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 20px;
+        }
+        .team-section button{
+          padding: 10px 20px;
+          border-radius: 50vh;   
+          background-color: #B77D4E;
+          border: none;
+          color: white;
+          cursor: pointer;;
+        }
+        .service-text p{
+          color: #B77D4E;
+        }
+        .service-text h2{
+          color: rgb(48, 48, 102);
+        }
+        .team-section{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 24px;
+          padding-inline: 20px;
+          padding-block: 20px;
+          background-color: tomato;
+        }
+        .service-content{
+          width: 98%; 
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          gap: 30px; 
+        }
+        .team-card{
+          width: 100%;
+          height: 100px; 
+        }
+
+
+
+
+
+
+
+
+
+        @media (min-width: 1024px){
+          .service-title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-inline: 20px;
+            padding-block: 20px;
+          }
+          .team-section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-inline: 20px;
+            padding-block: 20px;
+          }
+        }
     </style>    
 </head>
-<body class="bghitam teksputih">    
+<body class="">    
     <section class="team-section h-100vh w-full">
-      <article class="service-text">
-        <h2>What We Do</h2>
-        <p>We offer simple tech tech solutions to help your ideas grow</p>
+      <article class="service-title bgbiru">
+        <div class="service-text">
+          <p>PROFESSIONAL TEAM</p>
+          <h2>Team Behind Our Success</h2>
+        </div>
+        <button>ALL TEAM MEMBERS</button>
       </article>
+      <article class="service-content bgkuning">
+        <div class="team-card bgijo">
+          <h3>fulan</h3>
+        </div>
+        <div class="team-card bgijo">
+          <h3>fulan</h3>
+        </div>
+        <div class="team-card bgijo">
+          <h3>fulan</h3>
+        </div>
+        <div class="team-card bgijo">
+          <h3>alan</h3>
+        </div>
       </article>
     </section>
     <section class="h-100vh w-full bgtomat">
