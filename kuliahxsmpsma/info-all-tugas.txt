@@ -1,5 +1,8 @@
 hero
+services
 content1
 content2 
 stats
+cta
+team
 footer
