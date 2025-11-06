@@ -80,6 +80,7 @@ a{
 .tekssilver{
     color: rgb(199, 216, 216);
 }
+
 .team-section{
   display: flex;
   flex-direction: column;
@@ -90,16 +91,13 @@ a{
   padding-block: 20px;
   background-color: tomato;
 }
-.service-content{
-  width: 100%; 
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 30px; 
-}
-.team-card{
-  width: 100%;
-  height: 100px; 
+.team-section button{
+  padding: 10px 20px;
+  border-radius: 50vh;   
+  background-color: #B77D4E;
+  border: none;
+  color: white;
+  cursor: pointer;  
 }
 .service-title{
   width: 100%;
@@ -111,45 +109,53 @@ a{
   text-align: center;
   gap: 20px;
 }
-.team-section button{
-  padding: 10px 20px;
-  border-radius: 50vh;   
-  background-color: #B77D4E;
-  border: none;
-  color: white;
-  cursor: pointer;;
-}
 .service-text p{
   color: #B77D4E;
 }
 .service-text h2{
   color: rgb(48, 48, 102);
 }
+.service-content{
+  width: 100%; 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px; 
+}
+.team-card{
+  width: 100%;
+  height: 220px;  
+  position: relative;
+}
+.team-card img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.team-card p{
+    bottom: -10px;
+    left: 0;
+    position: absolute;
+    background-color: rgb(189, 126, 55);
+    border-radius: 0px 10px 0px 0px; 
+    padding: 10px 20px;
+    color: white;
+    /* box-shadow: 23px 23px red -23px -23px 45px red;  */
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 2);  */
+}
 
 
-
-
-
-
-
-
-
-
-
-@media (min-width: 1024px){
-  .service-title{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-inline: 20px;
-    padding-block: 20px;
-  }
-  .team-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-inline: 20px;
-    padding-block: 20px;
-  }
+/* 
+media query standar minimal
+min width: akan aktif ketika lebar layarnya minimal 1024 , kurang dari itu setingan css nya bawaan (versi mobile)
+*/
+@media (min-width: 500px){
+    *{
+        background-color: red;
+    }
+}
+@media (min-width: 800px){
+    *{
+        background-color: green;
+    }
 }
