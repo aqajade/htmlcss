@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=DM+Serif+Display:ital@0;1&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Righteous&family=Special+Gothic+Expanded+One&display=swap');
+:root{
+  --brown: #B77D4E ;
+  --blue: #303066;
+}
 *{
     margin: 0;
     padding: 0;
@@ -89,7 +93,6 @@ a{
   gap: 24px;
   padding-inline: 20px;
   padding-block: 20px;
-  background-color: tomato;
 }
 .team-section button{
   padding: 10px 20px;
@@ -109,11 +112,19 @@ a{
   text-align: center;
   gap: 20px;
 }
+.service-text{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .service-text p{
   color: #B77D4E;
+  font-weight: 600; 
+  font-size: 13px;
 }
 .service-text h2{
   color: rgb(48, 48, 102);
+  font-size: 23px;
 }
 .service-content{
   width: 100%; 
@@ -123,25 +134,63 @@ a{
   gap: 30px; 
 }
 .team-card{
+  position: relative;
   width: 100%;
   height: 220px;  
-  position: relative;
 }
 .team-card img{
   width: 100%;
   height: 100%;
   border-radius: 10px;
 }
+.team-card .socials{
+  position: absolute;
+  top: 0;
+  right: 14px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 13px;
+  color: white;
+  padding: 10px;
+  background-color: #B77D4E;
+}
+/* .team-card i{
+  position: absolute;
+  top: 0;
+  right: 14px;
+  cursor: pointer;
+  font-size: 13px;
+  color: white;
+  padding: 6px 20px 6px 6px;
+  background-color: #B77D4E;
+} */
+.team-card h3{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  width: 95%;
+  height: 25%; 
+  font-size: 15px;
+  color: var(--blue);
+  border-top-left-radius: 10px;
+  padding-inline-start: 20px;
+  padding-block-start: 10px;
+}
 .team-card p{
-    bottom: -10px;
-    left: 0;
-    position: absolute;
-    background-color: rgb(189, 126, 55);
-    border-radius: 0px 10px 0px 0px; 
-    padding: 10px 20px;
-    color: white;
-    /* box-shadow: 23px 23px red -23px -23px 45px red;  */
-    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 2);  */
+  font-size: 12px;
+  font-weight: 500;
+  bottom: -10px;
+  left: 0;
+  position: absolute;
+  background-color: var(--brown);
+  border-radius: 0px 10px 0px 0px; 
+  padding: 8px 20px;
+  color: white;
 }
 
 
