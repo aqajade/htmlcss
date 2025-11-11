@@ -102,7 +102,7 @@ a{
   color: white;
   cursor: pointer;  
 }
-.service-title{
+.team-title{
   width: 100%;
   padding-inline: 20px;
   padding-block: 20px;
@@ -112,21 +112,21 @@ a{
   text-align: center;
   gap: 20px;
 }
-.service-text{
+.team-text{
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.service-text p{
+.team-text p{
   color: #B77D4E;
   font-weight: 600; 
   font-size: 13px;
 }
-.service-text h2{
+.team-text h2{
   color: rgb(48, 48, 102);
   font-size: 23px;
 }
-.service-content{
+.team-content{
   width: 100%; 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -201,16 +201,29 @@ a{
 media query standar minimal
 min width: akan aktif ketika lebar layarnya minimal 1024 , kurang dari itu setingan css nya bawaan (versi mobile)
 */
+
 @media (min-width: 1024px){
   .team-section{
     display: flex;
     flex-direction: column;
-    /* fdc disini yg dipisah a/ team-title dan container grid */
+    /* fdc disini memisahkan team-title dan container grid */
     justify-content: center;
     align-items: center;
     gap: 24px;
     padding-inline: 20px;
     padding-block: 20px;
+  }
+  .team-title{
+    /* background-color: red; */
+    width: 100%;
+    padding-inline: 20px;
+    padding-block: 20px;
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: row; */
+    align-items: center;
+    text-align: center;
+    gap: 20px;
   }
   .team-section button{
     padding: 10px 20px;
@@ -220,31 +233,21 @@ min width: akan aktif ketika lebar layarnya minimal 1024 , kurang dari itu setin
     color: white;
     cursor: pointer;  
   }
-  .service-title{
-    width: 100%;
-    padding-inline: 20px;
-    padding-block: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-  }
-  .service-text{
+  .team-text{
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-  .service-text p{
+  .team-text p{
     color: #B77D4E;
     font-weight: 600; 
     font-size: 13px;
   }
-  .service-text h2{
+  .team-text h2{
     color: rgb(48, 48, 102);
     font-size: 23px;
   }
-  .service-content{
+  .team-content{
     width: 100%; 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
