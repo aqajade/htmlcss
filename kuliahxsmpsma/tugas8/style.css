@@ -144,6 +144,8 @@ a{
   border-radius: 10px;
 }
 .team-card .socials{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   position: absolute;
   top: 0;
   right: 14px;
@@ -156,6 +158,7 @@ a{
   font-size: 13px;
   color: white;
   padding: 10px;
+  padding-block-end: 15px; 
   background-color: #B77D4E;
 }
 /* .team-card i{
@@ -198,13 +201,116 @@ a{
 media query standar minimal
 min width: akan aktif ketika lebar layarnya minimal 1024 , kurang dari itu setingan css nya bawaan (versi mobile)
 */
-@media (min-width: 500px){
-    *{
-        background-color: red;
-    }
-}
-@media (min-width: 800px){
-    *{
-        background-color: green;
-    }
+@media (min-width: 1024px){
+  .team-section{
+    display: flex;
+    flex-direction: column;
+    /* fdc disini yg dipisah a/ team-title dan container grid */
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding-inline: 20px;
+    padding-block: 20px;
+  }
+  .team-section button{
+    padding: 10px 20px;
+    border-radius: 50vh;   
+    background-color: #B77D4E;
+    border: none;
+    color: white;
+    cursor: pointer;  
+  }
+  .service-title{
+    width: 100%;
+    padding-inline: 20px;
+    padding-block: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  .service-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .service-text p{
+    color: #B77D4E;
+    font-weight: 600; 
+    font-size: 13px;
+  }
+  .service-text h2{
+    color: rgb(48, 48, 102);
+    font-size: 23px;
+  }
+  .service-content{
+    width: 100%; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px; 
+  }
+  .team-card{
+    position: relative;
+    width: 100%;
+    height: 220px;  
+  }
+  .team-card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .team-card .socials{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 14px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 13px;
+    color: white;
+    padding: 10px;
+    padding-block-end: 15px; 
+    background-color: #B77D4E;
+  }
+  /* .team-card i{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    cursor: pointer;
+    font-size: 13px;
+    color: white;
+    padding: 6px 20px 6px 6px;
+    background-color: #B77D4E;
+  } */
+  .team-card h3{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    width: 95%;
+    height: 25%; 
+    font-size: 15px;
+    color: var(--blue);
+    border-top-left-radius: 10px;
+    padding-inline-start: 20px;
+    padding-block-start: 10px;
+  }
+  .team-card p{
+    font-size: 12px;
+    font-weight: 500;
+    bottom: -10px;
+    left: 0;
+    position: absolute;
+    background-color: var(--brown);
+    border-radius: 0px 10px 0px 0px; 
+    padding: 8px 20px;
+    color: white;
+  }
 }
