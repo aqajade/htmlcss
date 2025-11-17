@@ -209,21 +209,34 @@ min width: akan aktif ketika lebar layarnya minimal 1024 , kurang dari itu setin
     /* fdc disini memisahkan team-title dan container grid */
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: 16px; 
     padding-inline: 20px;
     padding-block: 20px;
   }
   .team-title{
-    /* background-color: red; */
     width: 100%;
     padding-inline: 20px;
     padding-block: 20px;
     display: flex;
-    flex-direction: column;
-    /* flex-direction: row; */
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
+    text-align: left; 
     gap: 20px;
+  }
+  .team-title .team-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .team-title .team-text p{
+    color: #B77D4E;
+    font-weight: 600; 
+    font-size: 13px;
+  }
+  .team-title .team-text h2{
+    color: rgb(48, 48, 102);
+    font-size: 23px;
   }
   .team-section button{
     padding: 10px 20px;
@@ -233,24 +246,10 @@ min width: akan aktif ketika lebar layarnya minimal 1024 , kurang dari itu setin
     color: white;
     cursor: pointer;  
   }
-  .team-text{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  .team-text p{
-    color: #B77D4E;
-    font-weight: 600; 
-    font-size: 13px;
-  }
-  .team-text h2{
-    color: rgb(48, 48, 102);
-    font-size: 23px;
-  }
   .team-content{
     width: 100%; 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 30px; 
   }
