@@ -132,7 +132,6 @@ a{
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 30px; 
-  background-color: tomato; 
 }
 .team-card{
   position: relative;
@@ -266,8 +265,8 @@ min width: akan aktif ketika lebar layarnya minimal 1024 , kurang dari itu setin
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 0px;
-    column-gap: 0px;
-    row-gap: 0px
+    /* column-gap: 0px; */
+    /* row-gap: 0px */
     /* gap: 30px;  */
   }
   .team-card{
