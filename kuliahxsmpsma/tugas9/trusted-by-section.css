@@ -89,33 +89,33 @@ body{
   background-color: rgb(20, 20, 20);
 }
 
+
 .trusted-by-section{
   background-color: tomato;
   padding-block: 20px;
-  padding-inline: 20px;
+  /* padding-inline: 20px; */
   display: flex;
   flex-direction: column;
-  gap: 70px;
+  gap: 50px;
 }
 
-.trusted-by-section article{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.trusted-by-section h2{
+  text-align: center;
+  font-size: 15px; 
 }
 
 .trusted-by-section .logo-containers{
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
+  width: 100%;
 }
 
-.logo-container-1{
+.trusted-by-section .logo-containers .logo-container-1{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  gap: 30px; 
 }
+
 
 img{
   filter:invert();
